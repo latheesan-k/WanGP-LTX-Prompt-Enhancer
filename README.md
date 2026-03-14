@@ -3,7 +3,7 @@ LTX specific prompt enhancer that follows official prompting guide (with a littl
 
 ## How to install
 
-1. Make a copy of this file `shared/prompt_enhancer/prompt_enhance_utils.py`
+1. Make a backup of this file `shared/prompt_enhancer/prompt_enhance_utils.py`
 2. Replace this file with my custom [prompt_enhance_utils.py](prompt_enhance_utils.py)
 3. Start WanGP and make sure you are using Qwen3.5VL 9B/4B (either should work)
 
@@ -35,3 +35,8 @@ FIREMAN: "It's getting deeper. We need to evacuate the block."
 The ground shudders. Debris rains down from the crater's rim. The firefighters scramble back as the hole opens wider, revealing a swirling vortex of black smoke and steam.
 HOLD ON THE VORTEX as it roars upward, merging with the clouds. Cut to black.
 ```
+
+## How to uninstall / revert
+
+* Restore backup file OR
+* Set `ltx_mode: bool = True,` to `False` on line #376
